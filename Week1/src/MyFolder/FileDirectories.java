@@ -11,9 +11,14 @@ public class FileDirectories {
         File folder = new File(folderPath);
         File[] files = folder.listFiles();
 
-        System.out.println("ALL OF MY FILES:");
-        for (File file : files) {
-            System.out.println(file);
+        if (files != null) {
+            System.out.println("ALL OF MY FILES:");
+            for (File file : files) {
+                if (file.isFile()) {
+                    System.out.println(file.getName());
+                }
+            }
+            System.out.print("\n");
         }
 
         if (files != null) {

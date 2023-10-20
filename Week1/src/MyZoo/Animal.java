@@ -11,11 +11,6 @@ public abstract class Animal {
         this.food = food;
     }
 
-    public abstract void sleep();
-
-    public abstract void eat();
-
-
     public String getSpecies() {
         return species;
     }

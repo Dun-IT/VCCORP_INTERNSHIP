@@ -36,10 +36,8 @@ public class Snake extends Animal implements IGroundAnimal {
     @Override
     public void printInfo() {
         System.out.println(
-                "Species: " + getSpecies() + "\n" +
-                        "Age: " + getAge() + "\n" +
-                        "Food: " + getFood() + "\n" +
-                        "Is poisonous: " + isPoisonous()
+                "Species: " + getSpecies() + "\n" + "Age: " + getAge() + "\n" +
+                        "Food: " + getFood() + "\n" + "Is poisonous: " + isPoisonous() + "\n"
         );
     }
 

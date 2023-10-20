@@ -38,18 +38,16 @@ public class Dog extends Animal implements IGroundAnimal {
     }
 
     public void priceCalculate() {
-        int dogAge = this.getAge();
-        String dogSpecies = this.getSpecies();
-        if (dogSpecies == "Shiba") {
-            if (dogAge > 0 && dogAge < 10) {
-                System.out.println("The price of dog is: " + dogAge * 1000 + "$\n");
-            } else if (dogAge >= 10 && dogAge <= 20) {
-                System.out.println("The price of dog is: " + dogAge * 700 + "$\n");
+        if (getSpecies() == "Shiba") {
+            if (getAge() > 0 && getAge() < 10) {
+                System.out.println("The price of dog is: " + getAge() * 1000 + "$\n");
+            } else if (getAge() >= 10 && getAge() <= 20) {
+                System.out.println("The price of dog is: " + getAge() * 700 + "$\n");
             } else {
                 System.out.println("The price is ###\n");
             }
         } else {
-            System.out.println("The price of dog is: " + dogAge * NORMALPRICE + "\n");
+            System.out.println("The price of dog is: " + getAge() * NORMALPRICE + "\n");
         }
     }
 

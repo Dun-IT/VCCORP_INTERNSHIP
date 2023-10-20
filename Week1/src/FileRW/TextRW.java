@@ -12,6 +12,7 @@ public class TextRW {
         BufferedWriter buffWrite = new BufferedWriter(new FileWriter(fileWrite));
         try (buffWrite) {
             buffWrite.write("Hi my name is Nguyen Khoa Doan");
+            buffWrite.close();
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -23,6 +24,7 @@ public class TextRW {
             while ((line = buffRead.readLine()) != null) {
                 System.out.println(line);
             }
+            buffRead.close();
         } catch (IOException e) {
             e.printStackTrace();
         }

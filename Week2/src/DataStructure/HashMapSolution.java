@@ -31,6 +31,7 @@ public class HashMapSolution {
         for (int i : myHashMap.keySet()) {
             System.out.println("KEY:" + i + "-VALUE:" + myHashMap.get(i));
         }
+
         // Truy nhap phan tu
         System.out.println("Phan tu co KEY = 2: " + myHashMap.get(2));
 
@@ -58,7 +59,7 @@ public class HashMapSolution {
 
     public static void searchElement(int ele, HashMap<Integer, Double> hashMap) {
         if (hashMap.containsKey(ele)) {
-            System.out.println("Phan tu ton tai va co gia tri la: " + hashMap.get(ele));
+            System.out.println("Phan tu co key = " + ele + " ton tai va co gia tri la: " + hashMap.get(ele));
         } else {
             System.out.println("Phan tu khong ton tai");
         }
